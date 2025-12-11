@@ -1,0 +1,35 @@
+#---------------------------------------------------
+# IDE & System Files
+#---------------------------------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+#---------------------------------------------------
+# Maven/Gradle Build Artifacts
+#---------------------------------------------------
+# Maven output directory
+target/
+# IntelliJ/Maven wrapper scripts
+*.bat
+*.cmd
+*.sh
+
+#---------------------------------------------------
+# Application Log Files
+#---------------------------------------------------
+*.log
+
+#---------------------------------------------------
+# Microservice-Specific Files (Crucial for your issue)
+#---------------------------------------------------
+# Ignore the specific runtime database folder that caused the error
+order.service/mysql/
+
+# Ignore files created by the Testcontainers or Docker setup
+**/*.sock
+**/binlog.index
+**/ib_buffer_pool
+**/auto.cnf
